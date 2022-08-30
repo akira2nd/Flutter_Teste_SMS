@@ -4,13 +4,12 @@
     <queries>
         <!-- If your app checks for SMS support -->
         <intent>
-            <action android:name="android.intent.action.VIEW" />
-            <data android:scheme="sms" />
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="smsto" />
         </intent>
-        <!-- If your app checks for call support -->
         <intent>
-            <action android:name="android.intent.action.VIEW" />
-            <data android:scheme="tel" />
+            <action android:name="android.intent.action.SEND" />
+            <data android:scheme="*/*" />
         </intent>
     </queries>
    <application
